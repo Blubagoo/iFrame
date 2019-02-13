@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body class="body">
+<style>
+	#full-site {
+		font-size: 20px;
+	}
+	#i-frame {
+		width: 98%;
+		text-align: center;
+		overflow-x: hidden;
+	}
+	#icon {
+		font-size: 30px;
+		color: white;	
+	}
+</style>
+
+	<div id="i-frame" hidden>
+		<div class="header-controls" style="background: #002d57; height: 144px; display: flex; flex: 1; justify-content: space-between; padding: 20px;align-items: flex-end;">
+			<img src="https://news.law/wp-content/uploads/2018/06/logo-e1529590288394.png" width="124px" height="144px" />
+			<div style="display: flex; flex: 1;justify-content: space-between; padding: 20px; align-items: flex-end;">
+				<button id="full-site">Go To Website</button>
+				<div style="width: 80px;">
+					<i class="fas fa-times-circle" id="icon"></i>
+				</div>
+			</div>
+
+		</div>
+		<iframe src="" width="100%" height="700px" allowfullscreen="allowfullscreen" id="myFrame" name="myFrame"></iframe>
+	</div>
+
+	<p><a href="https://jim-tisdale.herokuapp.com" target="myFrame" id="resume">Resume</a></p>
+<script src="index.js"></script>
+</body>
+</html>
